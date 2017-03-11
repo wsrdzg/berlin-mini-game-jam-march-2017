@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8cc1b74b2d8a74f39ad9132bb850e40f
+timeCreated: 1489255482
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Rubik Mono One
+  fontNames:
+  - Rubik Mono One
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
