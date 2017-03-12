@@ -1,5 +1,5 @@
 /* Rewired Constants
-   This list was generated on 03/11/2017 20:32:08
+   This list was generated on 03/12/2017 01:25:58
    The list applies to only the Rewired Input Manager from which it was generated.
    If you use a different Rewired Input Manager, you will have to generate a new list.
    If you make changes to the exported items in the Rewired Input Manager, you will need to regenerate this list.
@@ -8,16 +8,16 @@
 namespace RewiredConsts {
     public static class Action {
         // Default
-        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Look Horizontal")]
-        public const int Look_Horizontal = 2;
-        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Look Vertical")]
-        public const int Look_Vertical = 3;
-        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Doge")]
-        public const int Doge = 4;
+        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Horizontal")]
+        public const int Horizontal = 2;
+        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Vertical")]
+        public const int Vertical = 3;
         [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Move")]
         public const int Move = 5;
-        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Reset")]
-        public const int Reset = 6;
+        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Restart")]
+        public const int Restart = 6;
+        [Rewired.Dev.ActionIdFieldInfo(categoryName = "Default", friendlyName = "Exit")]
+        public const int Exit = 7;
     }
     public static class Category {
         public const int Default = 0;

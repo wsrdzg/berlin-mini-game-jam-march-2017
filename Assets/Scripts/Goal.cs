@@ -1,23 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Goal : MonoBehaviour {
 
-	public int _points;
-
 	[SerializeField]
-	Score score;
-
+	private Score _score;
 	[SerializeField]
-	bool left;
+	private bool _left;
+	[SerializeField]
+	private ParticleSystem _particleSystem;
 
-	void OnTriggerEnter(Collider collider) {
-		Ball ball = collider.gameObject.GetComponent<Ball>();
+
+	private void OnTriggerEnter(Collider other) {
+		Ball ball = other.GetComponent<Ball>();
 		if (ball != null) {
-			_points++;
+			_particleSystem.transform.position = other.transform.position;
+			_particleSystem.Play();
+
+			if (_left) {
+				_score.Right++;
+			} else {
+				_score.Left++;
+			}
+
 			ball.Respawn();
-			score.SetLeftScore(_points, !left);
 		}
 	}
 }

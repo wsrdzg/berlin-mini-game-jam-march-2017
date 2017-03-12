@@ -1,24 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
-	Text _Text;
-	int left, right;
+	private Text _text;
+	private int _left;
+	private int _right;
 
 
-	void Awake() {
-		_Text = GetComponent<Text>();
+	private void Awake() {
+		_text = GetComponent<Text>();
 	}
 
-	public void SetLeftScore(int score, bool direction) {
-		if (direction) {
-			left = score;
-		} else {
-			right = score;
+	public int Left {
+		get { return _left; }
+		set {
+			_left = value;
+			_text.text = _left + ":" + _right;
 		}
-		_Text.text = left + ":" + right;
+	}
+
+	public int Right {
+		get { return _right; }
+		set {
+			_right = value;
+			_text.text = _left + ":" + _right;
+		}
 	}
 }
